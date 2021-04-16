@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Natasha";
+  src: url("../fonts/natasha2.woff2") format("woff2"), url("../fonts/natasha.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+$font-title: "Natasha", "Arial", sans-serif;
+$font-general: "Roboto", "Arial", sans-serif;

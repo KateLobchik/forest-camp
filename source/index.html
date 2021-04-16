@@ -7,6 +7,12 @@
     content="Фуд-трак FOREST CAMP - это первый в Cанкт-Петербурге фургончик с испанкой печью Josper, который может приехать на любое событие, маркет, фестиваль или частное мероприятие!" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/natasha2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -14,16 +20,16 @@
   <header class="page-header">
     <div class="page-header__container">
       <div class="page-header__logo">
-        <img class="page-header__logo-img" src="https://via.placeholder.com/180x183" width="180" height="183"
+        <img class="page-header__logo-img" src="img/header/logo-header.svg" width="180" height="183"
           alt="Логотип Forest Camp">
       </div>
 
       <div class="page-header__desctiption">
-        <img class="page-header__logo-text" src="https://via.placeholder.com/706x83" width="706" height="83"
+        <img class="page-header__logo-text" src="img/header/logo-header-text.svg" width="706" height="83"
           alt="Forest Camp">
         <h1 class="page-header__description-title">Food track</h1>
         <p class="page-header__desctiption-text">Наш фуд-трак может приехать на любое
-          <span class="page-header__desctiption-text--uppercase">событие, маркет, фестиваль или частное
+          <span class="text-uppercase">событие, маркет, фестиваль или частное
             мероприятие!</span>
         </p>
       </div>
@@ -58,7 +64,7 @@
       </ul>
     </div>
 
-    <button class="page-header__button-delivery" type="button">Заказать</button>
+    <button class="button-delivery page-header__button" type="button">Заказать</button>
   </header>
 
 
@@ -90,7 +96,7 @@
 
         <ul class="about-food____slides">
           <!--Слайды-->
-          <li class="about-food__slide about-food__slide-1">
+          <!-- <li class="about-food__slide about-food__slide-1">
             <div class="about-food__slide-container">
               <img class="about-food__slide-img" src="https://via.placeholder.com/1440x536" width="1440" height="536"
                 alt="Burger">
@@ -101,19 +107,19 @@
               <img class="about-food__slide-img" src="https://via.placeholder.com/1440x536" width="1440" height="536"
                 alt="Burger">
             </div>
-          </li>
+          </li> -->
           <li class="about-food__slide about-food__slide-3 about-food__slide--current">
             <div class="about-food__slide-container">
-              <img class="about-food__slide-img" src="https://via.placeholder.com/1440x536" width="1440" height="536"
+              <img class="about-food__slide-img" src="img/about-food/slide-3-burger.jpg" width="1440" height="536"
                 alt="Burger">
             </div>
           </li>
-          <li class="about-food__slide about-food__slide-4">
+          <!-- <li class="about-food__slide about-food__slide-4">
             <div class="about-food__slide-container">
               <img class="about-food__slide-img" src="https://via.placeholder.com/1440x536" width="1440" height="536"
                 alt="Burger">
             </div>
-          </li>
+          </li> -->
         </ul>
 
         <div class="about-food__slider-pagination">
@@ -134,17 +140,17 @@
       <div class="about-us__container">
         <h2 class="about-us__title"><a name="about-us">О нас</a></h2>
         <div class="about-us__photos">
-          <img class="about-us__photo" src="https://via.placeholder.com/349x466" width="349" height="466"
+          <img class="about-us__photo" src="img/about-us/track-street.jpg" width="349" height="466"
             alt="Фургон на улице перед офисным зданием">
-          <img class="about-us__photo" src="https://via.placeholder.com/697x465" width="697" height="465"
+          <img class="about-us__photo" src="img/about-us/track.jpg" width="697" height="465"
             alt="Фотография фургон вблизи">
-          <img class="about-us__photo" src="https://via.placeholder.com/349x466" width="349" height="466"
+          <img class="about-us__photo" src="img/about-us/track-event.jpg" width="349" height="466"
             alt="Фургон на мероприятии внутри помещения">
         </div>
 
         <div class="about-us__description">
           <p class="about-us__description-age">Уже 5 лет наш фуд-трак работает на самых значимых городских локациях.</p>
-          <p class="about-us__description-text"><span class="about-us__description-text--uppercase">Мы часто радуем
+          <p class="about-us__description-text"><span class="text-uppercase">Мы часто радуем
               гостей корпоративных мероприятий</span><br>
             И успели посотрудничать с замечательными крупными и маленькими компаниями, неизменно оставляя гостей сытыми
             и довольными!</p>
@@ -195,10 +201,9 @@
         <h2 class="menu__title"><a name="our-menu">Наше меню</a></h2>
         <div class="menu__description">
           <div class="menu__description-point">
-            <img class="menu__photo" src="https://via.placeholder.com/829x583" width="829" height="583"
-              alt="Три сочных бургера">
+            <img class="menu__photo" src="img/menu/burgers-3.jpg" width="829" height="583" alt="Три сочных бургера">
             <p class="menu__description-text">
-              <span class="menu-description--uppercase">Основа нашего меню - блюда из мяса, приготовленные на углях, в
+              <span class="text-uppercase">Основа нашего меню - блюда из мяса, приготовленные на углях, в
                 печи Josper!</span>
               <br>
               <b>Бургер с котлеткой из мраморной говядины,</b> со свежими овощами и соусом барбекю.
@@ -209,7 +214,7 @@
             </p>
           </div>
           <div class="menu__description-point">
-            <img class="menu__photo" src="https://via.placeholder.com/829x583" width="829" height="583"
+            <img class="menu__photo" src="img/menu/assorti-meet.jpg" width="829" height="583"
               alt="Аппетитный бургер, хрустящий корн-дог, сочный стейк">
             <p class="menu__description-text">
               Для особенных мероприятий мы можем составить индивидуальное меню.
@@ -219,7 +224,7 @@
             </p>
           </div>
           <div class="menu__description-point">
-            <img class="menu__photo" src="https://via.placeholder.com/829x583" width="829" height="583"
+            <img class="menu__photo" src="img/menu/drinks.jpg" width="829" height="583"
               alt="Освежающий лимонад, бодрящий фраппе, согревающий латте">
             <p class="menu__description-text">
               Летом мы освежим вас <b>домашними лимонадами.</b>
@@ -259,7 +264,7 @@
                   <p class="menu-item__part-description">стандартного размера (280мл)</p>
                 </li>
               </lo>
-              <img class="menu__photo" src="https://via.placeholder.com/443x392" width="443" height="392"
+              <img class="menu__photo" src="img/menu/set-1.jpg" width="443" height="392"
                 alt="Врап с мраморной говядиной">
             </div>
 
@@ -286,7 +291,7 @@
                   <p class="menu-item__part-description">стандартного размера (280мл)</p>
                 </li>
               </lo>
-              <img class="menu__photo" src="https://via.placeholder.com/443x392" width="443" height="392"
+              <img class="menu__photo" src="img/menu/set-2.jpg" width="443" height="392"
                 alt="Врап с мраморной говядиной">
             </div>
 
@@ -312,7 +317,7 @@
                   <p class="menu-item__part-description">стандартного размера (280мл)</p>
                 </li>
               </lo>
-              <img class="menu__photo" src="https://via.placeholder.com/443x392" width="443" height="392"
+              <img class="menu__photo" src="img/menu/set-3.jpg" width="443" height="392"
                 alt="Врап с мраморной говядиной">
             </div>
           </div>
@@ -404,7 +409,7 @@
             </div>
           </div>
         </div>
-        <button class="price__button" type="button">Заказать</button>
+        <button class="button-delivery price__button" type="button">Заказать</button>
       </div>
     </section>
 
@@ -444,38 +449,38 @@
 
     <section class="instagram">
       <div class="instagram__container">
-        <h2 class="instagram__title"></h2>
+        <h2 class="instagram__title">Мы в инстаграмме</h2>
         <div class="instagram__gallery">
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/1-tee-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/2-event-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/3-food-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/4-coffee-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/5-street-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/6-burger-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/7-coffee-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
           <div class="instagram__photo-container">
-            <img class="instagram__photo" src="https://via.placeholder.com/285x285" width="285" height="285"
+            <img class="instagram__photo" src="img/instagram/8-meet-1.jpg" width="285" height="285"
               alt="Врап с мраморной говядиной">
           </div>
         </div>
@@ -484,29 +489,29 @@
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="footer__container">
       <section class="footer__contacts">
         <h2 class="footer__contacts-title"><a name="contacts">Контакты</a></h2>
         <p class="footer__contacts-description">Forest Camp фуд-трак</p>
-        <a class="header-contacts__phone-numder" href="tel:+79215699710">+7 (921) 569-97-10</a>
-        <a class="header-contacts__phone-numder" href="tel:+79046460548">+7 (904) 646-05-48</a>
-        <a class="header-contacts__mail" href="mailto:flyflycofee@gmail.com">flyflycofee@gmail.com</a>
-        <ul class="header-contacts__social header-social">
-          <li class="header-social__item">
-            <a class="header-social__link" href="" aria-label="Вконтакте">VK</a>
+        <a class="footer__phone-numder" href="tel:+79215699710">+7 (921) 569-97-10</a>
+        <a class="footer__phone-numder" href="tel:+79046460548">+7 (904) 646-05-48</a>
+        <a class="footer__mail" href="mailto:flyflycofee@gmail.com">flyflycofee@gmail.com</a>
+        <ul class="footer__social footer-social">
+          <li class="footer__item">
+            <a class="footer__link" href="" aria-label="Вконтакте">VK</a>
           </li>
-          <li class="header-social__item">
-            <a class="header-social__link" href="" aria-label="Инстаграм">Instagram</a>
+          <li class="footer__item">
+            <a class="footer__link" href="" aria-label="Инстаграм">Instagram</a>
           </li>
         </ul>
-        <button class="price__button" type="button">Заказать</button>
+        <button class="button-delivery footer__button" type="button">Заказать</button>
       </section>
 
       <section class="footer__info">
         <p class="footer__info-adress">Санкт-Петербург</p>
         <div class="footer__info-logo">
-          <img class="footer__logo-img" src="https://via.placeholder.com/110x111" width="110" height="111"
+          <img class="footer__logo-img" src="img/header/logo-header.svg" width="110" height="111"
             alt="Логотип Forest Camp">
         </div>
         <nav class="footer__info-nav footer-nav">
