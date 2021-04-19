@@ -2,6 +2,12 @@
   font-size: 16px;
   line-height: 19px;
   z-index: 10;
+
+  @media (max-width: $width-tablet) {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .header-contacts__phone-numbers {
@@ -61,6 +67,20 @@
 
   &:active {
     color: $white-20;
+  }
+}
+
+.header-contacts__mail-text {
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.header-contacts__icon-email {
+  display: none;
+
+  @media (max-width: $width-tablet) {
+    display: block;
   }
 }
 

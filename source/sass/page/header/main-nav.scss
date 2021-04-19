@@ -14,7 +14,7 @@
   box-sizing: border-box;
 
   @media (max-width: $width-tablet) {
-    justify-content: flex-end;
+    display: none;
     padding-top: 14px;
     font-size: 13px;
     line-height: 16px;
@@ -37,7 +37,7 @@
 .main-nav__item-contacts {
   display: none;
 
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile) {
     display: inline-block;
   }
 }

@@ -190,8 +190,11 @@
   padding: 3px 0 0;
   text-align: end;
 
-  @media (max-width: 1000px) {
-    display: none;
+  @media (max-width: $width-tablet) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
 
