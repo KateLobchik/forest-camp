@@ -1,8 +1,18 @@
 $white: #ffffff;
-$white-20: hsla(0, 0%, 100%, 0.2);
+$white-70: #fff9;
+$white-20: #fff3;
 $black: #000000;
+$dark-grey: #252323;
 $basic-green: #006837;
 $green: #3A7539;
+$green-dark: #005C31;
+
+//BODY
+$background-header: $dark-grey;
+$background-menu: $dark-grey;
+$background-footer: $dark-grey;
+
+$button-delivery-hover: $green-dark;
 
 
 // Section price

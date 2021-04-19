@@ -1,0 +1,40 @@
+.button-delivery {
+  margin: 0;
+  padding: 14px 23px 14px 27px;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $basic-green;
+  border: none;
+  border-radius: 33px;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+
+  @media (max-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.button-delivery:hover,
+.button-delivery:focus {
+  color: $white-70;
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.button-delivery:active {
+  padding: 12px 21px 12px 25px;
+  color: $white-20;
+  background-color: $basic-green;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4);
+}

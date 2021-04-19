@@ -1,6 +1,6 @@
-$width-mobile: 320px;
-$width-tablet: 768px;
-$width-desktop: 1340px;
+$width-mobile: 768px;
+$width-tablet: 1000px;
+$width-desktop: 1450px;
 
 .page {
   height: 100%;
@@ -8,11 +8,12 @@ $width-desktop: 1340px;
 
 .page__body {
   min-width: $width-mobile;
-  min-height: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   align-content: start;
   font-family: $font-general;
+  font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: $black;
