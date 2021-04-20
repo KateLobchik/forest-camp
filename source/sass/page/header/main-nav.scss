@@ -1,3 +1,58 @@
+.main-nav {
+  @media (max-width: $width-mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 0 0;
+  }
+
+  @media (max-width: 550px) {
+    padding: 10px 20px 0 0;
+  }
+}
+
+.main-nav__nav-toggle {
+  display: none;
+
+  @media (max-width: $width-mobile) {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+
+    &--active {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icons/header/icon-menu-close.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 19px 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -33.5px;
+        left: -7px;
+        width: 34px;
+        height: 100px;
+        background: linear-gradient(to top, $white-15 50%, transparent 75%);
+      }
+    }
+
+    &--closed {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icons/header/icon-menu.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+}
+
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
@@ -14,10 +69,31 @@
   box-sizing: border-box;
 
   @media (max-width: $width-tablet) {
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @media (max-width: $width-mobile) {
     display: none;
-    padding-top: 14px;
-    font-size: 13px;
-    line-height: 16px;
+
+    &--active {
+      @media (max-width: $width-mobile) {
+        position: absolute;
+        top: 101px;
+        left: 0;
+        width: 100wv;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $white-15;
+      }
+    }
+
+    &--nojs {
+      top: 157px;
+    }
   }
 }
 
@@ -28,17 +104,17 @@
   @media (max-width: $width-tablet) {
     padding: 10px 16px;
   }
+
+  @media (max-width: $width-mobile) {
+    padding: 25px 0 10px;
+  }
 }
 
 .main-nav__list-item:last-child {
   padding-right: 0;
-}
-
-.main-nav__item-contacts {
-  display: none;
 
   @media (max-width: $width-mobile) {
-    display: inline-block;
+    padding-bottom: 25px;
   }
 }
 
