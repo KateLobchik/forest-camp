@@ -22,12 +22,13 @@
     cursor: pointer;
     position: relative;
     z-index: 10;
+    transition: all 150ms ease-in-out;
 
     &--active {
       width: 24px;
       height: 24px;
       background-image: url("../img/icons/header/icon-menu-close.svg");
-      background-position: 0 0;
+      background-position: 0 1px;
       background-repeat: no-repeat;
       background-size: 19px 20px;
 
@@ -46,7 +47,7 @@
       width: 24px;
       height: 24px;
       background-image: url("../img/icons/header/icon-menu.svg");
-      background-position: 50% 50%;
+      background-position: 0 0;
       background-repeat: no-repeat;
       background-size: 20px 20px;
     }
