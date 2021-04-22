@@ -39,6 +39,8 @@
   }
 }
 
+
+
 .header-contacts__toggle--active {
   color: $white-70;
 
@@ -102,7 +104,22 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 0;
+      padding: 15px 0;
+      position: absolute;
+      top: 101px;
+      left: 0;
+      width: 100vw;
+      background-color: $black-60;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
       position: absolute;
       top: 101px;
       left: 0;
@@ -132,7 +149,7 @@
 
   @media (max-width: $width-mobile) {
     display: block;
-    padding: 20px 0;
+    padding: 15px 0;
   }
 }
 

@@ -1,0 +1,152 @@
+.food-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  padding: 30px 80px 83px;
+  box-sizing: border-box;
+  list-style: none;
+
+  @media (max-width: $width-tablet) {
+    padding: 30px 45px 83px;
+  }
+
+  @media (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px 20px;
+    padding-left: 25%;
+
+  }
+}
+
+.food-features__item {
+  width: 100%;
+  margin: 0;
+  padding: 0 40px 0 60px;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    padding: 0 20px 20px;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0 15px 50px;
+  }
+}
+
+.food-features__item-quality {
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: 19%;
+    width: 100px;
+    height: 134px;
+    background-image: url("../img/about-food/quality.svg");
+    background-size: 100px 134px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    @media (max-width: 650px) {
+      top: -35px;
+      left: -22px;
+      right: auto;
+      width: 55px;
+      height: 90px;
+      background-size: 55px 90px;
+    }
+  }
+}
+
+.food-features__item-choice {
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: 10%;
+    width: 153px;
+    height: 134px;
+    background-image: url("../img/about-food/choice.svg");
+    background-size: 153px 134px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    @media (max-width: 650px) {
+      top: -25px;
+      left: -32px;
+      right: auto;
+      width: 75px;
+      height: 55px;
+      background-image: url("../img/about-food/choice-mobile.svg");
+      background-size: 75px 55px;
+    }
+  }
+}
+
+.food-features__item-natural {
+  &::after {
+    content: "";
+    position: absolute;
+    top: -35%;
+    right: 10%;
+    width: 120px;
+    height: 130px;
+    background-image: url("../img/about-food/natural.svg");
+    background-size: 120px 130px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    @media (max-width: 650px) {
+      top: -35px;
+      left: -22px;
+      right: auto;
+      width: 60px;
+      height: 70px;
+      background-size: 60px 70px;
+    }
+  }
+}
+
+.food-features__item-title {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  color: $basic-green;
+
+  @media (max-width: $width-tablet) {
+    padding: 18px 0;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0 0 10px;
+  }
+}
+
+.food-features__item-description {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+
+  @media (max-width: $width-mobile) {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+.food-features__text-br {
+  @media (max-width: 860px) {
+    display: none;
+  }
+}

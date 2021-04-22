@@ -36,21 +36,28 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
   }
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 70px;
-    right: $calc-background-burger;
-    width: 762px;
-    height: 572px;
-    background-image: url("../img/header/background-burger-left.png");
-    background-size: 762px 572px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 10%;
+    @media (min-width: 100vw) {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: -29%;
+      width: 762px;
+      height: 572px;
+      background-image: url("../img/header/background-burger-left.png");
+      background-size: 762px 572px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      opacity: 10%;
+    }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/header/background-burger-left@2x.png");
       background-size: 762px 572px;
+    }
+
+    @media (max-width: $width-desktop) {
+      left: auto;
+      right: $calc-background-burger;
     }
 
     @media (max-width: $width-tablet) {
@@ -73,21 +80,28 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    top: 70px;
-    left: $calc-background-burger;
-    width: 524px;
-    height: 688px;
-    background-image: url("../img/header/background-burger-right.png");
-    background-size: 524px 688px;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    opacity: 10%;
+    @media (min-width: 100vw) {
+      content: "";
+      position: absolute;
+      top: 70px;
+      right: -15%;
+      width: 524px;
+      height: 688px;
+      background-image: url("../img/header/background-burger-right.png");
+      background-size: 524px 688px;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      opacity: 10%;
+    }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/header/background-burger-right@2x.png");
       background-size: 524px 688px;
+    }
+
+    @media (max-width: $width-desktop) {
+      left: $calc-background-burger;
+      right: auto;
     }
 
     @media (max-width: 1000px) {
@@ -147,18 +161,23 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
   @media (max-width: $width-mobile) {
     margin-top: 0;
     padding: 0 20px;
+    transition: padding-top 500ms ease-in-out;
   }
 }
 
 .page-header__desctiption--open-phone {
   @media (max-width: $width-mobile) {
-    padding-top: 90px;
+    padding-top: 100px;
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 140px;
   }
 }
 
 .page-header__desctiption--open-menu {
   @media (max-width: $width-mobile) {
-    padding-top: 200px;
+    padding-top: 190px;
   }
 }
 
@@ -169,7 +188,8 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
 }
 
 .page-header__description-title {
-  margin: 0 0 12px;
+  margin: 0;
+  padding: 0 0 12px;
   font-family: $font-title;
   font-size: 100px;
   line-height: 100px;
@@ -186,11 +206,11 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
   }
 
   @media (max-width: $width-mobile) {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 60px;
+    line-height: 65px;
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 20px;
+    padding-top: 40px;
   }
 }
 

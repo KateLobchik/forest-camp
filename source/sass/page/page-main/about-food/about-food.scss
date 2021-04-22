@@ -1,0 +1,39 @@
+.about-food__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: $width-desktop;
+  margin: 0 auto;
+  padding: 100px 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.about-food__title {
+  margin: 0;
+  padding: 0 60px 60px;
+  font-family: $font-general;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: $basic-green;
+
+  @media (max-width: $width-tablet) {
+    padding-bottom: 40px;
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 20px 40px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.about-food__features {
+  margin: 0;
+  padding: 20px 60px;
+}

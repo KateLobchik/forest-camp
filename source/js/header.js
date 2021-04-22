@@ -1,4 +1,4 @@
-(() => {
+{
   const buttonPhone = document.querySelector('.header-contacts__toggle');
   const phoneList = document.querySelector('.header-contacts__phone-numbers');
   const buttonNav = document.querySelector('.main-nav__nav-toggle');
@@ -18,10 +18,7 @@
   description.classList.remove('page-header__desctiption--nojs');
 
   const isActiveDescription = () => {
-    if (description.classList.contains('page-header__desctiption--open-phone') || description.classList.contains('page-header__desctiption--open-menu')) {
-      return true;
-    }
-    return false;
+    return (description.classList.contains('page-header__desctiption--open-phone') || description.classList.contains('page-header__desctiption--open-menu'));
   }
 
   const activeClassOfDescription = (class1, class2) => {
@@ -68,4 +65,4 @@
     }
   });
 
-})();
+};
