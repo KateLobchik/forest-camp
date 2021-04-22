@@ -104,7 +104,7 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
       right: auto;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: $width-tablet) {
       top: 0;
       left: auto;
       right: -250px;
