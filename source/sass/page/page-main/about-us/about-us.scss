@@ -97,17 +97,11 @@
     background-position: 0 0;
     transform: translate(0, -50%);
 
-    // @media (max-width: $width-tablet) {
-    //   top: 5px;
-    //   left: -24px;
-    //   width: 19px;
-    //   height: 21px;
-    //   background-size: 19px 21px;
-    // }
-
-    // @media (max-width: $width-mobile) {
-    //   display: none;
-    // }
+    @media (max-width: $width-tablet) {
+      width: 214px;
+      height: 186px;
+      background-size: 214px 186px;
+    }
   }
 }
 
