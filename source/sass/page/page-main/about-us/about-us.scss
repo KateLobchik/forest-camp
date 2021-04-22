@@ -72,6 +72,7 @@
   padding: 100px 130px 120px;
   font-size: 20px;
   line-height: 23px;
+  position: relative;
 
   @media (max-width: $width-tablet) {
     padding: 70px 40px 60px;
@@ -86,14 +87,15 @@
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: -10px;
+    top: 50%;
+    left: 75%;
     width: 428px;
     height: 373px;
-    background-image: url("../img/about-us-background-logo.svg");
+    background-image: url("../img/about-us/background-logo.svg");
     background-size: 428px 373px;
     background-repeat: no-repeat;
     background-position: 0 0;
+    transform: translate(0, -50%);
 
     // @media (max-width: $width-tablet) {
     //   top: 5px;

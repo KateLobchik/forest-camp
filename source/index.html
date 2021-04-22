@@ -139,8 +139,13 @@
           </li> -->
             <li class="slider__slide slider__slide-3 slider__slide--current">
               <div class="about-food__slide-container">
-                <img class="slider__slide-img" src="img/about-food/slide-3-burger.jpg" width="1440" height="536"
-                  alt="Burger">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/about-food/slide-3-burger.webp 1x, img/about-food/slide-3-burger@2x.webp 2x">
+
+                  <img class="slider__slide-img" src="img/about-food/slide-3-burger.jpg"
+                    srcset="img/about-food/slide-3-burger@2x.jpg 2x" width="1440" height="536" alt="Burger">
+                </picture>
               </div>
             </li>
             <!-- <li class="about-food__slide about-food__slide-4">
@@ -166,12 +171,29 @@
       <div class="about-us__container">
         <h2 class="about-us__title"><a name="about-us">О нас</a></h2>
         <div class="about-us__photos">
-          <img class="about-us__photo" src="img/about-us/track-street.jpg" width="349" height="466"
-            alt="Фургон на улице перед офисным зданием">
-          <img class="about-us__photo about-us__photo-trak" src="img/about-us/track.jpg" width="697" height="466"
-            alt="Фотография фургон вблизи">
-          <img class="about-us__photo" src="img/about-us/track-event.jpg" width="349" height="466"
-            alt="Фургон на мероприятии внутри помещения">
+          <picture>
+            <source type="image/webp" srcset="img/about-us/track-street.webp 1x, img/about-us/track-street@2x.webp 2x">
+
+            <img class="about-us__photo" src="img/about-us/track-street.jpg"
+              srcset="img/about-us/track-street@2x.jpg 2x" width="349" height="466"
+              alt="Фургон на улице перед офисным зданием">
+          </picture>
+
+          <picture>
+            <source type="image/webp" srcset="img/about-us/track.webp 1x, img/about-us/track@2x.webp 2x">
+
+            <img class="about-us__photo about-us__photo-trak" src="img/about-us/track.jpg"
+              srcset="img/about-us/track@2x.jpg 2x" width="697" height="466" alt="Фотография фургон вблизи">
+          </picture>
+
+          <picture>
+            <source type="image/webp"
+              srcset="img/about-us/track-on-party.webp 1x, img/about-us/track-on-party@2x.webp 2x">
+
+            <img class="about-us__photo" src="img/about-us/track-on-party.jpg"
+              srcset="img/about-us/track-on-party@2x.jpg 2x" width="349" height="466"
+              alt="Фургон на мероприятии внутри помещения">
+          </picture>
         </div>
 
         <div class="about-us__description">
