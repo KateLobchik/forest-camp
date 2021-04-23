@@ -43,16 +43,11 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
       left: -29%;
       width: 762px;
       height: 572px;
-      background-image: url("../img/header/background-burger-left.png");
+      background-image: url("../img/background/dark-background/sandwich.svg");
       background-size: 762px 572px;
       background-repeat: no-repeat;
       background-position: 0 0;
-      opacity: 10%;
-    }
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/header/background-burger-left@2x.png");
-      background-size: 762px 572px;
+      opacity: 0.1;
     }
 
     @media (max-width: $width-desktop) {
@@ -87,16 +82,11 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
       right: -15%;
       width: 524px;
       height: 688px;
-      background-image: url("../img/header/background-burger-right.png");
+      background-image: url("../img/background/dark-background/flying-burger.svg");
       background-size: 524px 688px;
       background-repeat: no-repeat;
       background-position: 50% 0;
-      opacity: 10%;
-    }
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/header/background-burger-right@2x.png");
-      background-size: 524px 688px;
+      opacity: 0.1;
     }
 
     @media (max-width: $width-desktop) {
