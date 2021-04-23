@@ -9,8 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="fonts/natasha2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
   <link href="css/style.min.css" rel="stylesheet">
@@ -305,59 +306,67 @@
       <div class="menu__examples menu-examples">
         <div class="menu-examples__container">
           <h3 class="menu-examples__title">Несколько вариантов стандартных предложений по меню</h3>
-          <p class="menu-examples__description">Для особенных мероприятий мы можем составить индивидуальное меню.</p>
+          <p class="menu-examples__description">
+            Для особенных мероприятий&nbsp;<br class="menu-examples__text-br">
+            мы можем составить индивидуальное меню.</p>
 
           <div class="menu-examples__list">
 
             <!-- Первый сет -->
             <div class="menu-examples__item menu-item">
-              <h4 class="menu-item__title">Сет 1</h4>
+              <div class="menu-item__info-container">
+                <h4 class="menu-item__title">Сет 1</h4>
 
-              <lo class="menu-item__structure">
-                <li class="menu-item__part">
-                  <h5 class="menu-item__part-title">1. Врап с мраморной говядиной</h5>
-                  <p class="menu-item__part-description">
-                    Состав:<br>
-                    мраморная говядина,<br>
-                    180гр, сыр красный чеддер,<br>
-                    свежие овощи (огурцы томаты),<br>
-                    розовый соус с копченой паприкой,<br>
-                    пшеничная тортилья.
-                  </p>
-                  <p class="menu-item__weight">Вес 370гр</p>
-                </li>
-                <li class="menu-item__part">
-                  <h5 class="menu-item__part-title">2. Домашний лимонад / любой кофе</h5>
-                  <p class="menu-item__part-description">стандартного размера (280мл)</p>
-                </li>
-              </lo>
-              <img class="menu-item__photo" src="img/menu/set-1.jpg" width="443" height="392"
-                alt="Врап с мраморной говядиной">
+                <div class="menu-item__structure">
+                  <div class="menu-item__part">
+                    <h5 class="menu-item__part-title">1. Врап с мраморной говядиной</h5>
+                    <p class="menu-item__part-description menu-item__description-structure">
+                      Состав:<br>
+                      мраморная говядина,<br>
+                      180гр, сыр красный чеддер,<br>
+                      свежие овощи (огурцы томаты),<br>
+                      розовый соус с копченой паприкой,<br>
+                      пшеничная тортилья.
+                    </p>
+                    <p class="menu-item__weight">Вес 370гр</p>
+                  </div>
+                  <div class="menu-item__part">
+                    <h5 class="menu-item__part-title menu-item__part-title-2">2. Домашний лимонад / любой кофе</h5>
+                    <p class="menu-item__part-description">стандартного размера (280мл)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item__photo-container">
+                <img class="menu-item__photo" src="img/menu/set-1.jpg" width="443" height="392"
+                  alt="Врап с мраморной говядиной">
+              </div>
             </div>
 
 
             <!-- Второй сет -->
             <div class="menu-examples__item menu-item">
-              <h4 class="menu-item__title">Сет 2</h4>
+              <div class="menu-item__info-container">
+                <h4 class="menu-item__title">Сет 2</h4>
 
-              <lo class="menu-item__structure">
-                <li class="menu-item__part">
-                  <h5 class="menu-item__part-title">1. Бургер с мраморной говядиной</h5>
-                  <p class="menu-item__part-description">
-                    Состав:<br>
-                    мраморная говядина 180гр,<br>
-                    сыр красный чеддер,<br>
-                    свежие овощи (огурцы и томаты),<br>
-                    розовый соус с копченой паприкой,<br>
-                    булочка бриошь
-                  </p>
-                  <p class="menu-item__weight">Вес 360гр</p>
-                </li>
-                <li class="menu-item__part">
-                  <h5 class="menu-item__part-title">2. Домашний лимонад / любой кофе</h5>
-                  <p class="menu-item__part-description">стандартного размера (280мл)</p>
-                </li>
-              </lo>
+                <lo class="menu-item__structure">
+                  <li class="menu-item__part">
+                    <h5 class="menu-item__part-title">1. Бургер с мраморной говядиной</h5>
+                    <p class="menu-item__part-description menu-item__description-structure">
+                      Состав:<br>
+                      мраморная говядина 180гр,<br>
+                      сыр красный чеддер,<br>
+                      свежие овощи (огурцы и томаты),<br>
+                      розовый соус с копченой паприкой,<br>
+                      булочка бриошь
+                    </p>
+                    <p class="menu-item__weight">Вес 360гр</p>
+                  </li>
+                  <li class="menu-item__part">
+                    <h5 class="menu-item__part-title menu-item__part-title-2">2. Домашний лимонад / любой кофе</h5>
+                    <p class="menu-item__part-description">стандартного размера (280мл)</p>
+                  </li>
+                </lo>
+              </div>
               <img class="menu-item__photo" src="img/menu/set-2.jpg" width="443" height="392"
                 alt="Врап с мраморной говядиной">
             </div>
@@ -365,33 +374,36 @@
 
             <!-- Третий сет -->
             <div class="menu-examples__item menu-item">
-              <h4 class="menu-item__title">Сет 3</h4>
+              <div class="menu-item__info-container">
+                <h4 class="menu-item__title">Сет 3</h4>
 
-              <lo class="menu-item__structure">
-                <li class="menu-item__part">
-                  <h5 class="menu-item__part-title">1. Врап с куриным филе</h5>
-                  <p class="menu-item__part-description">
-                    Состав:<br>
-                    куриное филе в авторском маринаде 180гр,<br>
-                    свежие овощи(огурцы и томаты),<br>
-                    сливочный соус,<br>
-                    пшеничная тортилья.
-                  </p>
-                  <p class="menu-item__weight"> Вес 370гр</p>
-                </li>
-                <li class="menu-item__part">
-                  <h5 class="menu-item__part-title">2. Домашний лимонад / любой кофе</h5>
-                  <p class="menu-item__part-description">стандартного размера (280мл)</p>
-                </li>
-              </lo>
+                <lo class="menu-item__structure">
+                  <li class="menu-item__part">
+                    <h5 class="menu-item__part-title">1. Врап с куриным филе</h5>
+                    <p class="menu-item__part-description menu-item__description-structure">
+                      Состав:<br>
+                      куриное филе в авторском маринаде 180гр,<br>
+                      свежие овощи(огурцы и томаты),<br>
+                      сливочный соус,<br>
+                      пшеничная тортилья.
+                    </p>
+                    <p class="menu-item__weight"> Вес 370гр</p>
+                  </li>
+                  <li class="menu-item__part">
+                    <h5 class="menu-item__part-title menu-item__part-title-2">2. Домашний лимонад / любой кофе</h5>
+                    <p class="menu-item__part-description">стандартного размера (280мл)</p>
+                  </li>
+                </lo>
+              </div>
               <img class="menu-item__photo" src="img/menu/set-3.jpg" width="443" height="392"
                 alt="Врап с мраморной говядиной">
             </div>
           </div>
 
           <div class="menu__changes">
-            <p class="menu__changes-vegan">Для вегетарианцев мы можем приготовить вариант блюда без мяса, добавив
-              сливочный сыр и лук фри.</p>
+            <p class="menu__changes-vegan">
+              Для вегетарианцев мы можем приготовить вариант блюда&nbsp;<br class="menu__changes-br">
+              без мяса, добавив сливочный сыр и лук фри.</p>
             <p class="menu__changes-ask">Напишите или позвоните нам, если захотите внести пожелания или узнать
               подробности</p>
           </div>
@@ -578,8 +590,7 @@
       <section class="footer__info">
         <p class="footer__info-adress">Санкт-Петербург</p>
         <div class="footer__info-logo">
-          <img class="footer__logo-img" src="img/header/logo-header.svg" width="110" height="111"
-            alt="Логотип Forest Camp">
+          <img class="footer__logo-img" src="img/main-logo.svg" width="110" height="111" alt="Логотип Forest Camp">
         </div>
         <nav class="footer__info-nav footer-nav">
           <ul class="footer-nav__list">

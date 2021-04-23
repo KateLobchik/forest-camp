@@ -254,6 +254,10 @@
   padding-left: 100px;
   padding-right: 35px;
 
+  @media (max-width: $width-tablet) {
+    padding-left: 50px;
+  }
+
   @media (max-width: $width-mobile) {
     padding: 30px 30px 30px 20px;
   }

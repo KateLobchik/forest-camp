@@ -154,7 +154,7 @@
 .feature-about {
   &::before {
     width: 80px;
-    background-image: url("../img/header/logo-header.svg");
+    background-image: url("../img/main-logo.svg");
     background-size: 80px 80px;
 
     @media (max-width: $width-mobile) {

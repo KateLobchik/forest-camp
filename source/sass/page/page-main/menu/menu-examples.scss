@@ -1,0 +1,114 @@
+.menu-examples {
+  color: $white;
+  background-color: $background-header;
+  background-image: url("../img/background-dark.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.menu-examples__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: $width-desktop;
+  margin: 0 auto;
+  padding: 55px 20px;
+  box-sizing: border-box;
+
+  @media (max-width: $width-tablet) {
+    padding: 55px 40px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 55px 20px;
+  }
+}
+
+.menu-examples__title {
+  margin: 0;
+  padding: 0 0 20px;
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  @media (max-width: $width-tablet) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.menu-examples__description {
+  margin: 0;
+  padding: 0 0 65px;
+  font-weight: 300;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  @media (max-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.menu-examples__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+
+  @media (max-width: $width-tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu__changes {
+  align-self: flex-end;
+  padding: 65px 6% 0 0;
+
+  @media (max-width: $width-tablet) {
+    align-self: flex-start;
+    padding: 50px 0 0 20%;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 40px 0 0 70px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.menu__changes-vegan {
+  margin: 0;
+  padding: 0 0 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu__changes-ask {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.menu__changes-br {
+  @media (max-width: $width-mobile) {
+    display: none;
+  }
+}
