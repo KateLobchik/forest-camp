@@ -17,6 +17,7 @@
   margin: 0 auto;
   padding: 55px 20px;
   box-sizing: border-box;
+  position: relative;
 
   @media (max-width: $width-tablet) {
     padding: 55px 40px;
@@ -24,6 +25,77 @@
 
   @media (max-width: $width-mobile) {
     padding: 55px 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -245px;
+    right: -30px;
+    width: 38%;
+    height: 478px;
+    background-image: url("../img/background/dark-background/limon.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    opacity: 0.1;
+
+    @media (max-width: 1150px) {
+      top: -300px;
+      width: 40%;
+    }
+
+    @media (max-width: $width-tablet) {
+      top: -330px;
+      width: 350px;
+    }
+
+    @media (max-width: $width-mobile) {
+      top: -350px;
+      width: 300px;
+    }
+
+    @media (max-width: 600px) {
+      top: -370px;
+      right: -40px;
+      width: 250px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -280px;
+    right: -100px;
+    width: 445px;
+    height: 421px;
+    background-image: url("../img/background/dark-background/cheeseburger.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transform: rotate(-5deg);
+    opacity: 0.1;
+
+    @media (max-width: 1150px) {
+      bottom: -250px;
+      width: 400px;
+    }
+
+    @media (max-width: $width-tablet) {
+      bottom: -230px;
+      width: 350px;
+    }
+
+    @media (max-width: $width-mobile) {
+      bottom: -180px;
+      width: 300px;
+    }
+
+    @media (max-width: 600px) {
+      bottom: -140px;
+      right: -100px;
+      width: 250px;
+    }
   }
 }
 
@@ -70,9 +142,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   width: 100%;
+  z-index: 1;
 
   @media (max-width: $width-tablet) {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
@@ -91,6 +167,41 @@
     padding: 40px 0 0 70px;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -420px;
+    right: 76%;
+    width: 646px;
+    height: 661px;
+    background-image: url("../img/background/dark-background/meet-peper.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    opacity: 0.1;
+
+    // @media (max-width: 1250px) {
+    //   bottom: -490px;
+    //   right: auto;
+    //   left: -300px;
+    //   width: 550px;
+    // }
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
+    @media (max-width: $width-tablet) {
+      bottom: -490px;
+      left: -290px;
+      width: 450px;
+    }
+
+    @media (max-width: $width-mobile) {
+      display: none;
+    }
   }
 }
 
