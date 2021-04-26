@@ -19,3 +19,8 @@ $width-desktop: 1440px;
   color: $black;
   background-color: $white;
 }
+
+.page__container-overflow {
+  width: 100vw;
+  overflow: hidden;
+}
