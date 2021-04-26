@@ -20,7 +20,7 @@
 <body class="page__body">
 
   <header class="page-header">
-    <div class="page__container-overflow">
+    <div class="page__container-overflow page-header__container-overflow">
       <div class="page-header__container">
         <div class="page-header__logo">
           <img class="page-header__logo-img" src="img/main-logo.svg" width="180" height="183" alt="Логотип Forest Camp">
@@ -95,6 +95,7 @@
           <button class="button-delivery page-header__button" type="button">Заказать</button>
         </div>
       </div>
+    </div>
   </header>
 
 
@@ -434,78 +435,89 @@
       <section class="price">
         <div class="price__container">
           <h2 class="price__title"><a name="calculation-price">Рассчитать стоимость</a></h2>
-          <p class="price__description">Если вам удобно работать по предоплате, мы можем составить меню и расчитать
-            стоимость заранее</p>
+          <p class="price__description">
+            Если вам удобно работать по предоплате,&nbsp;<br class="price__text-br">
+            мы можем составить меню и расчитать стоимость заранее
+          </p>
 
           <div class="price__calculation">
-            <input class="price__calculation-input" type="number" placeholder="Введите количество">
-            <p class="price__calculation-description">Если на вашем мероприятии планируется более 200 гостей мы готовы
-              работать как ресторанчик с розничной продажей наших вкусностей.</p>
+            <div class="price__calculation-section">
+              <input class="price__calculation-input" type="number" placeholder="Введите количество">
+              <p class="price__calculation-description">
+                Если на вашем мероприятии планируется более 200 гостей&nbsp;<br class="price__calculation-br">
+                мы готовы работать как ресторанчик с розничной продажей наших вкусностей.</p>
+            </div>
 
             <div class="price__calculation-range calculation-range">
               <p class="calculation-range__description">Количество человек</p>
-              <ol class="calculation-range__points">
-                <li class="calculation-range__point point-10">10</li>
-                <li class="calculation-range__point point-50">50</li>
-                <li class="calculation-range__point point-100">100</li>
-                <li class="calculation-range__point point-150">150</li>
-                <li class="calculation-range__point point-300">300</li>
-              </ol>
-              <div class="calculation-range__range">
+              <div class="calculation-range__range-constainer">
+                <ol class="calculation-range__points">
+                  <li class="calculation-range__point point-10">10</li>
+                  <li class="calculation-range__point point-50">50</li>
+                  <li class="calculation-range__point point-100">100</li>
+                  <li class="calculation-range__point point-150">150</li>
+                  <li class="calculation-range__point point-300">300</li>
+                </ol>
                 <button class="calculation-range__range-toggle" type="button"
-                  aria-label="Ползунок для выбора количесва человек">125</button>
-                <div class="calculation-range__range-scale">
-                </div>
+                  aria-label="Ползунок для выбора количесва человек">126</button>
+                <div class="calculation-range__range-scale"></div>
               </div>
             </div>
 
             <div class="price__calculation-data data">
               <section class="data__item">
-                <h3 class="data__price data__price-set">
-                  550 р
-                </h3>
-                <div class="data__description-container">
-                  <p class="data__description data__statistics-description">
-                    Ориентировочная&nbsp;<br class="data__next-line">
-                    стоимость сета
-                  </p>
+                <div class="data__item-container">
+                  <h3 class="data__price data__price-set">
+                    550 р
+                  </h3>
+                  <div class="data__description-container">
+                    <p class="data__description data__statistics-description">
+                      Ориентировочная&nbsp;<br>
+                      стоимость сета
+                    </p>
+                  </div>
                 </div>
                 <p class="data__clarification">* бургер + напиток на 1-го гостя</p>
               </section>
-              <section class="data__item">
-                <h3 class="data__price data__price-logistic">
-                  10000 р
-                </h3>
-                <div class="data__description-container">
-                  <p class="data__description data__statistics-description">
-                    Стоимость логистики
+              <section class="data__item data__item-logistic">
+                <div class="data__item-container">
+                  <h3 class="data__price data__price-logistic">
+                    10&nbsp;000 р
+                  </h3>
+                  <div class="data__description-container">
+                    <p class="data__description data__description-logistic">
+                      Стоимость&nbsp;<br class="data__next-line">
+                      логистики
+                    </p>
+                  </div>
+                </div>
+
+                <div class="data__logistic logistic">
+                  <p class="logistic__discription">
+                    Стоимость логистики&nbsp;<br>
+                    зависит от кол-ва людей
                   </p>
+                  <table class="logistic__all-info">
+                    <tr class="logistic__info-row">
+                      <th class="logistic__info-amount amount-1">10-50</th>
+                      <td class="logistic__info-price price-1">25000 р</td>
+                    </tr>
+                    <tr class="logistic__info-row">
+                      <th class="logistic__info-amount amount-2">50-100</th>
+                      <td class="logistic__info-price price-2">15000 р</td>
+                    </tr>
+                    <tr class="logistic__info-row">
+                      <th class="logistic__info-amount amount-3">100-150</th>
+                      <td class="logistic__info-price price-3">10000 р</td>
+                    </tr>
+                    <tr class="logistic__info-row">
+                      <th class="logistic__info-amount amount-4">150-300</th>
+                      <td class="logistic__info-price price-4">0 р</td>
+                    </tr>
+                  </table>
                 </div>
               </section>
 
-              <div class="data__logistic-price logistic">
-                <p class="logistic__discription">
-                  Стоимость логистики зависит от кол-ва людей
-                </p>
-                <table class="logistic__all-info">
-                  <tr class="logistic__info-row">
-                    <th class="logistic__info-amount">10-50</th>
-                    <td class="logistic__info-price">25000 р</td>
-                  </tr>
-                  <tr class="logistic__info-row">
-                    <th class="logistic__info-amount">50-100</th>
-                    <td class="logistic__info-price">15000 р</td>
-                  </tr>
-                  <tr class="logistic__info-row">
-                    <th class="logistic__info-amount">100-150</th>
-                    <td class="logistic__info-price">10000 р</td>
-                  </tr>
-                  <tr class="logistic__info-row">
-                    <th class="logistic__info-amount">150-300</th>
-                    <td class="logistic__info-price">0 р</td>
-                  </tr>
-                </table>
-              </div>
             </div>
           </div>
           <button class="button-delivery price__button" type="button">Заказать</button>

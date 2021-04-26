@@ -1,0 +1,142 @@
+.logistic__discription {
+  margin: 0;
+  padding: 0 0 13px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  font-style: italic;
+
+  @media (max-width: $width-tablet) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 0 5px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+.logistic__all-info {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  color: $green;
+  border-spacing: 0;
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 9px;
+    line-height: 14px;
+  }
+}
+
+.logistic__info-amount {
+  margin: 0;
+  padding: 0 0 0 15px;
+  width: 65%;
+  font-weight: normal;
+  text-align: left;
+  border-bottom: 0.5px solid;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+    opacity: 0.8;
+
+    @media (max-width: $width-tablet) {
+      width: 8px;
+      height: 8px;
+    }
+
+    @media (max-width: $width-mobile) {
+      width: 7px;
+      height: 7px;
+    }
+  }
+}
+
+.amount-1 {
+  color: $step-1;
+  border-color: $step-1;
+
+  &::before {
+    background-color: $step-1;
+  }
+}
+
+.amount-2 {
+  color: $step-2;
+  border-color: $step-2;
+
+  &::before {
+    background-color: $step-2;
+  }
+}
+
+.amount-3 {
+  color: $step-3;
+  border-color: $step-3;
+
+  &::before {
+    background-color: $step-3;
+  }
+}
+
+.amount-4 {
+  color: $step-4;
+  border-color: $step-4;
+
+  &::before {
+    background-color: $step-4;
+  }
+}
+
+.logistic__info-price {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-bottom: 0.5px solid $green;
+}
+
+.price-1 {
+  color: $step-1;
+  border-color: $step-1;
+}
+
+.price-2 {
+  color: $step-2;
+  border-color: $step-2;
+}
+
+.price-3 {
+  color: $step-3;
+  border-color: $step-3;
+}
+
+.price-4 {
+  color: $step-4;
+  border-color: $step-4;
+}

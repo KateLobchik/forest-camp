@@ -1,0 +1,228 @@
+.calculation-range {
+  width: 100%;
+  padding: 45px 0 66px;
+
+  @media (max-width: $width-tablet) {
+    padding: 35px 0;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-left: 28px 0;
+  }
+}
+
+.calculation-range__description {
+  margin: 0;
+  padding: 0 0 30px;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 300;
+
+  @media (max-width: $width-tablet) {
+    padding-left: 40px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-left: 0;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.calculation-range__range-constainer {
+  position: relative;
+}
+
+.calculation-range__points {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  margin: 0;
+  padding: 37px 0 0;
+  font-weight: 300;
+  color: $black-50;
+  list-style: none;
+
+  @media (max-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 27px 0 0;
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+.calculation-range__point {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -37px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    @media (max-width: $width-mobile) {
+      top: -27px;
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -37px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: translate(0, -50%);
+
+    @media (max-width: $width-mobile) {
+      top: -27px;
+      height: 1.5px;
+    }
+  }
+}
+
+.point-10 {
+  &::before {
+    background-color: $step-1;
+    transform: translate(0, -50%);
+  }
+
+  &::after {
+    background-color: $step-1;
+  }
+}
+
+.point-50 {
+  text-indent: -7px;
+  @media (max-width: $width-tablet) {
+    text-indent: -7px;
+  }
+  @media (max-width: $width-mobile) {
+    color: transparent;
+  }
+
+  &::before {
+    background-color: $step-2;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    background-color: $step-2;
+  }
+}
+
+.point-100 {
+  text-indent: -12px;
+  @media (max-width: $width-tablet) {
+    text-indent: -5px;
+  }
+  @media (max-width: $width-mobile) {
+    color: transparent;
+  }
+
+  &::before {
+    background-color: $step-3;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    background-color: $step-3;
+  }
+}
+
+.point-150 {
+  text-indent: -12px;
+  @media (max-width: $width-tablet) {
+    text-indent: -5px;
+  }
+  @media (max-width: $width-mobile) {
+    text-indent: -5px;
+  }
+
+  &::before {
+    background-color: $step-4;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    background-color: $step-4;
+  }
+}
+
+.point-300 {
+  text-align: end;
+
+  &::before {
+    left: auto;
+    right: 0;
+    background-color: $step-4;
+    transform: translate(0, -50%);
+  }
+
+  &::after {
+    background-color: $step-4;
+  }
+}
+
+.calculation-range__range-scale {
+  position: absolute;
+  top: -1.5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+}
+
+.calculation-range__range-toggle {
+  position: absolute;
+  top: 0;
+  left: 42%;
+  padding: 7px 11px 5px;
+  font-family: $font-general;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: $green;
+  background-color: $white;
+  border: 2.5px solid $step-3;
+  border-radius: 15px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: $width-tablet) {
+    padding: 5px 8px 2px;
+    font-size: 16px;
+    line-height: 17px;
+    border: 2px solid $step-3;
+  }
+  @media (max-width: $width-mobile) {
+    padding: 3px 5px 2px;
+    font-size: 13px;
+    line-height: 14px;
+    border: 1.5px solid $step-3;
+  }
+}
+
+.calculation-range__range-toggle:hover,
+.calculation-range__range-toggle:focus {
+  outline: none;
+  border-width: 3px;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: $width-tablet) {
+    border-width: 2.5px;
+  }
+  @media (max-width: $width-mobile) {
+    border-width: 2px;
+  }
+}
