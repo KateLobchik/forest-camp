@@ -1,0 +1,302 @@
+.booking__container {
+  max-width: $width-desktop;
+  margin: 0 auto;
+  padding: 260px 9%;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (max-width: $width-tablet) {
+    padding: 160px 6%;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 120px 6%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 23%;
+    left: 80%;
+    width: 213px;
+    height: 203px;
+    background-image: url("../img/background/light-background/burger.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transform: rotate(5deg);
+    opacity: 0.1;
+
+    @media (max-width: $width-tablet) {
+      top: 160px;
+      left: 90%;
+      width: 180px;
+    }
+
+    @media (max-width: $width-mobile) {
+      top: 100px;
+      left: 85%;
+      width: 160px;
+    }
+
+    // @media (max-width: 600px) {
+    //   top: -280px;
+    //   right: -100px;
+    //   width: 250px;
+    // }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 80px;
+    left: 80%;
+    width: 455px;
+    height: 421px;
+    background-image: url("../img/background/light-background/cheeseburger.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transform: rotate(-5deg);
+    opacity: 0.1;
+
+    @media (max-width: $width-tablet) {
+      left: 84%;
+      bottom: 80px;
+      width: 380px;
+    }
+
+    @media (max-width: $width-mobile) {
+      bottom: 100px;
+      width: 320px;
+    }
+
+    @media (max-width: 450px) {
+      bottom: 200px;
+      left: 75%;
+    }
+  }
+}
+
+.booking__title {
+  margin: 0;
+  padding: 0 0 101px;
+  font-family: $font-title;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $basic-green;
+
+  @media (max-width: $width-tablet) {
+    padding-bottom: 90px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-bottom: 50px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.booking__steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 180px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $width-tablet) {
+    column-gap: 20px;
+    row-gap: 120px;
+  }
+
+  @media (max-width: $width-mobile) {
+    column-gap: 10px;
+    row-gap: 60px;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.booking__step {
+  margin: 0;
+  padding: 135px 0 0 100px;
+  position: relative;
+
+  @media (max-width: $width-tablet) {
+    padding: 135px 0 0 90px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 135px 0 0 75px;
+  }
+
+  @media (max-width: 650px) {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 174px;
+    height: 352px;
+    font-size: 300px;
+    line-height: 350px;
+    font-weight: 900;
+    opacity: 0.05;
+
+    @media (max-width: $width-tablet) {
+      height: 302px;
+      font-size: 250px;
+      line-height: 300px;
+    }
+
+    @media (max-width: $width-mobile) {
+      width: 100px;
+      height: 202px;
+      font-size: 200px;
+      line-height: 250px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100px;
+    height: 116px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+
+    @media (max-width: $width-tablet) {
+      left: 90px;
+    }
+
+    @media (max-width: $width-mobile) {
+      left: 75px;
+    }
+  }
+}
+
+.step-1 {
+  &::before {
+    content: "1";
+  }
+  &::after {
+    width: 128px;
+    background-image: url("../img/booking/mail.svg");
+
+    @media (max-width: $width-tablet) {
+      width: 114px;
+    }
+
+    @media (max-width: $width-mobile) {
+      width: 100px;
+    }
+  }
+}
+
+.step-2 {
+  &::before {
+    content: "2";
+  }
+  &::after {
+    width: 158px;
+    background-image: url("../img/booking/discussion.svg");
+
+    @media (max-width: $width-tablet) {
+      width: 144px;
+    }
+
+    @media (max-width: $width-mobile) {
+      width: 130px;
+    }
+  }
+}
+
+.step-3 {
+  &::before {
+    content: "3";
+  }
+  &::after {
+    width: 128px;
+    background-image: url("../img/booking/prepear.svg");
+
+    @media (max-width: $width-tablet) {
+      width: 114px;
+    }
+
+    @media (max-width: $width-mobile) {
+      width: 100px;
+    }
+  }
+}
+
+.step-4 {
+  &::before {
+    content: "4";
+  }
+  &::after {
+    width: 138px;
+    background-image: url("../img/booking/food.svg");
+
+    @media (max-width: $width-tablet) {
+      width: 124px;
+    }
+
+    @media (max-width: $width-mobile) {
+      width: 110px;
+    }
+  }
+}
+
+.booking__step-title {
+  margin: 0;
+  padding: 0 0 25px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0 18px;
+    font-size: 18px;
+    line-height: 19px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 0 16px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+}
+
+.booking__step-description {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0 18px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 0 16px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
