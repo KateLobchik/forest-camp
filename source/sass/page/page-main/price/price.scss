@@ -16,6 +16,82 @@
   @media (max-width: 450px) {
     padding: 60px 0 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -147px;
+    right: -100px;
+    width: 445px;
+    height: 421px;
+    background-image: url("../img/background/light-background/cheeseburger.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transform: rotate(-5deg);
+    opacity: 0.1;
+
+    @media (max-width: 1150px) {
+      top: -176px;
+      width: 400px;
+    }
+
+    @media (max-width: $width-tablet) {
+      top: -190px;
+      width: 350px;
+    }
+
+    @media (max-width: $width-mobile) {
+      top: -240px;
+      width: 300px;
+    }
+
+    @media (max-width: 600px) {
+      top: -280px;
+      right: -100px;
+      width: 250px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -147px;
+    right: 75%;
+    width: 433px;
+    height: 429px;
+    background-image: url("../img/background/light-background/hot-dog.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    opacity: 0.1;
+
+    @media (max-width: 1150px) {
+      bottom: -147px;
+      right: 80%;
+      width: 400px;
+    }
+
+    @media (max-width: $width-tablet) {
+      bottom: -120px;
+      width: 350px;
+    }
+
+    @media (max-width: $width-mobile) {
+      bottom: -100px;
+      width: 300px;
+    }
+
+    @media (max-width: 600px) {
+      right: 74%;
+      bottom: -60px;
+      width: 250px;
+    }
+
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
 }
 
 .price__title {
