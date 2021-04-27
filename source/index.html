@@ -170,9 +170,9 @@
         </div>
       </section>
 
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="about-us__container">
-          <h2 class="about-us__title"><a name="about-us">О нас</a></h2>
+          <h2 class="about-us__title">О нас</h2>
           <div class="about-us__photos">
             <picture>
               <source type="image/webp"
@@ -256,9 +256,9 @@
         </div>
       </section>
 
-      <section class="menu">
+      <section class="menu" id="our-menu">
         <div class="menu__container">
-          <h2 class="menu__title"><a name="our-menu">Наше меню</a></h2>
+          <h2 class="menu__title">Наше меню</h2>
           <div class="menu__description">
 
             <div class="menu__description-point menu__point-1">
@@ -458,9 +458,9 @@
         </div>
       </section>
 
-      <section class="price">
+      <section class="price" id="calculation-price">
         <div class="price__container">
-          <h2 class="price__title"><a name="calculation-price">Рассчитать стоимость</a></h2>
+          <h2 class="price__title">Рассчитать стоимость</h2>
           <p class="price__description">
             Если вам удобно работать по предоплате,&nbsp;<br class="price__text-br">
             мы можем составить меню и расчитать стоимость заранее
@@ -485,8 +485,8 @@
                   <li class="calculation-range__point point-300">300</li>
                 </ol>
                 <button class="calculation-range__range-toggle" type="button"
-                  aria-label="Ползунок для выбора количесва человек">126</button>
-                <div class="calculation-range__range-scale"></div>
+                  aria-label="Ползунок для выбора количесва человек">125</button>
+                <input class="calculation-range__range-scale" type="range" min="10" max="300" step="5">
               </div>
             </div>
 
@@ -676,38 +676,55 @@
   <footer class="footer">
     <div class="page__container-overflow">
       <div class="footer__container">
-        <section class="footer__contacts">
-          <h2 class="footer__contacts-title"><a name="contacts">Контакты</a></h2>
-          <p class="footer__contacts-description">Forest Camp фуд-трак</p>
-          <a class="footer__phone-numder" href="tel:+79215699710">+7 (921) 569-97-10</a>
-          <a class="footer__phone-numder" href="tel:+79046460548">+7 (904) 646-05-48</a>
-          <a class="footer__mail" href="mailto:flyflycofee@gmail.com">flyflycofee@gmail.com</a>
-          <ul class="footer__social footer-social">
-            <li class="footer__item">
-              <a class="footer__link" href="" aria-label="Вконтакте">VK</a>
+
+        <section class="footer__contacts footer-contacts">
+          <h2 class="footer-contacts__contacts-title">Контакты</h2>
+          <p class="footer-contacts__contacts-description">Forest Camp фуд-трак</p>
+          <ul class="footer-contacts__phone-numbers">
+            <li class="footer-contacts__phone-numder">
+              <a class="footer-contacts__phone-link" href="tel:+79215699710">+7 (921) 569-97-10</a>
             </li>
-            <li class="footer__item">
-              <a class="footer__link" href="" aria-label="Инстаграм">Instagram</a>
+            <li class="footer-contacts__phone-numder">
+              <a class="footer-contacts__phone-link" href="tel:+79046460548">+7 (904) 646-05-48</a>
             </li>
           </ul>
-          <button class="button-delivery footer__button" type="button">Заказать</button>
+          <a class="footer-contacts__mail" href="mailto:flyflycofee@gmail.com">flyflycofee@gmail.com</a>
+          <p class="footer-contacts__adress">Санкт-Петербург</p>
+          <ul class="footer-contacts__social">
+            <li class="footer-contacts__social-item">
+              <a class="footer-contacts__social-link" href="https://vk.com/forestcamp_spb" aria-label="Вконтакте">
+                <svg class="footer-contacts__link-vk" width="24" height="24">
+                  <use href="img/icons/sprite-icons.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-contacts__social-item">
+              <a class="footer-contacts__social-link" href="https://www.instagram.com/forest_camp_foodtruck"
+                aria-label="Инстаграм">
+                <svg class="footer-contacts__link-instagram" width="24" height="24">
+                  <use href="img/icons/sprite-icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button class="button-delivery footer-contacts__button" type="button">Заказать</button>
         </section>
 
-        <section class="footer__info">
-          <p class="footer__info-adress">Санкт-Петербург</p>
-          <div class="footer__info-logo">
-            <img class="footer__logo-img" src="img/main-logo.svg" width="110" height="111" alt="Логотип Forest Camp">
+        <section class="footer__info footer-info">
+          <div class="footer-info__info-logo">
+            <img class="footer-info__logo-img" src="img/main-logo.svg" width="110" height="111"
+              alt="Логотип Forest Camp">
           </div>
-          <nav class="footer__info-nav footer-nav">
-            <ul class="footer-nav__list">
-              <li class="footer-nav__list-item">
-                <a class="footer-nav__link" href="#about-us">О нас</a>
+          <nav class="footer-info__info-nav">
+            <ul class="footer-info__nav-list">
+              <li class="footer-info__nav-item">
+                <a class="footer-info__nav-link" href="#about-us">О нас</a>
               </li>
-              <li class="footer-nav__list-item">
-                <a class="footer-nav__link" href="#our-menu">Наше меню</a>
+              <li class="footer-info__nav-item">
+                <a class="footer-info__nav-link" href="#our-menu">Наше меню</a>
               </li>
-              <li class="footer-nav__list-item">
-                <a class="footer-nav__link" href="#calculation-price">Расчитать стоимость</a>
+              <li class="footer-info__nav-item">
+                <a class="footer-info__nav-link" href="#calculation-price">Расчитать стоимость</a>
               </li>
             </ul>
           </nav>
