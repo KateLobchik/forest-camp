@@ -411,7 +411,6 @@
                   <img class="menu-item__photo" src="img/menu/set-2.jpg" srcset="img/menu/set-2@2x.jpg 2x" width="442"
                     height="392" alt="Бургер с мраморной говядиной">
                 </picture>
-                alt="Бургер с мраморной говядиной">
               </div>
 
 
@@ -734,36 +733,42 @@
   </footer>
 
 
-  <section class="modal-order">
+  <section class="modal-order modal-order--active">
+    <div class="modal-order__container">
 
-    <div class="modal-order__question">
-      <h2 class="modal-order__title modal-order__question-title">А вы уже определились с ...</h2>
-      <p class="modal-order__question-questions">
-        Количеством гостей?<br>
-        Датой события?<br>
-        Локацией?<br>
-        Меню?
-      </p>
-    </div>
-
-    <div class="modal-order__contacts">
-      <h2 class="modal-order__title modal-order__contacts-title">Звоните/пишите нам</h2>
-      <p class="modal-order__contacts-description">
-        И мы обговорим каждый волнующий вас пункт!
-      </p>
-      <div class="modal-order__contacts-container">
-        <ul class="modal-order__phone-numbers">
-          <li class="modal-order__phone-numder">
-            <a class="modal-order__phone-link" href="tel:+79215699710">+7 (921) 569-97-10</a>
-          </li>
-          <li class="modal-order__phone-numder">
-            <a class="modal-order__phone-link" href="tel:+79046460548">+7 (904) 646-05-48</a>
-          </li>
-        </ul>
-        <a class="modal-order__mail" href="mailto:flyflycofee@gmail.com">flyflycofee@gmail.com</a>
+      <div class="modal-order__question">
+        <h2 class="modal-order__title modal-order__question-title">А вы уже определились с ...</h2>
+        <p class="modal-order__question-questions">
+          Количеством гостей?<br>
+          Датой события?<br>
+          Локацией?<br>
+          Меню?
+        </p>
       </div>
-    </div>
 
+      <div class="modal-order__contacts">
+        <h2 class="modal-order__title modal-order__contacts-title">Звоните/пишите нам</h2>
+        <p class="modal-order__contacts-description">
+          И мы обговорим каждый волнующий вас пункт!
+        </p>
+        <div class="modal-order__contacts-container">
+          <div class="modal-order__contacts-item">
+            <ul class="modal-order__phone-numbers">
+              <li class="modal-order__phone-numder">
+                <a class="modal-order__phone-link" href="tel:+79215699710">+7 (921) 569-97-10</a>
+              </li>
+              <li class="modal-order__phone-numder">
+                <a class="modal-order__phone-link" href="tel:+79046460548">+7 (904) 646-05-48</a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-order__contacts-item">
+            <a class="modal-order__mail" href="mailto:flyflycofee@gmail.com">flyflycofee@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <script src="js/min/main.js" type="module"></script>

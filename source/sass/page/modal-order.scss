@@ -1,4 +1,21 @@
-.modal-order {
+.modal-order--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.modal-order__container{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14,7 +31,17 @@
   background-position: 0 0;
   background-size: cover;
   box-sizing: border-box;
+  box-shadow: -10px 10px 20px 10px $black-70;
+  overflow: hidden;
   position: relative;
+
+  @media (max-width: $width-tablet) {
+    padding: 46px 74px 16px 46px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 36px 30px 16px;
+  }
 
   &::before {
     content: "";
@@ -27,6 +54,22 @@
     background-size: 145px 148px;
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (max-width: $width-tablet) {
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 103px;
+      background-size: 100px 103px;
+    }
+
+    @media (max-width: 550px) {
+      top: 80px;
+      right: 20px;
+      width: 70px;
+      height: 73px;
+      background-size: 70px 73px;
+    }
   }
 
   &::after {
@@ -45,6 +88,15 @@
   }
 }
 
+// .modal-order--active {
+
+// }
+
+
+
+
+
+
 .modal-order__title {
   margin: 0;
   font-family: $font-title;
@@ -52,6 +104,16 @@
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (max-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 
@@ -59,10 +121,26 @@
 .modal-order__question {
   align-self: flex-start;
   padding-bottom: 60px;
+
+  @media (max-width: $width-tablet) {
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-bottom: 35px;
+  }
 }
 
 .modal-order__question-title {
   padding: 0 0 22px;
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0 19px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 0 16px;
+  }
 }
 
 .modal-order__question-questions {
@@ -72,6 +150,16 @@
   line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
+
+  @media (max-width: $width-tablet) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 
@@ -85,6 +173,14 @@
 
 .modal-order__contacts-title {
   padding: 0 0 9px;
+
+  @media (max-width: $width-tablet) {
+    padding-bottom: 7px;
+  }
+
+  @media (max-width: 550px) {
+    padding-bottom: 5px;
+  }
 }
 
 .modal-order__contacts-description {
@@ -93,38 +189,65 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 300;
+  text-transform: lowercase;
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0 20px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 
 .modal-order__contacts-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
   gap: 44px;
   width: 100%;
   height: auto;
+  z-index: 1;
+
+  @media (max-width: $width-tablet) {
+    gap: 35px;
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+.modal-order__contacts-item {
+  padding: 58px 40px 11px;
+  text-align: center;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (max-width: $width-tablet) {
+    padding: 48px 23px 9px;
+  }
 }
 
 .modal-order__phone-numbers {
-  margin: auto;
-  padding: 58px 35px 11px 43px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 19px;
   font-weight: 700;
   text-transform: uppercase;
   list-style: none;
-  position: relative;
-  border: 1px solid $white;
-  box-sizing: border-box;
 
-  // @media (max-width: $width-tablet) {
-  //   margin-bottom: 30px;
-  //   padding-left: 110px;
-  // }
-
-  // @media (max-width: $width-mobile) {
-  //   font-size: 14px;
-  //   line-height: 14px;
-  // }
+  @media (max-width: 550px) {
+    font-size: 13px;
+    line-height: 16px;
+  }
 
   &::before {
     content: "Телефон";
@@ -139,20 +262,16 @@
     text-transform: uppercase;
     transform: translate(-50%, 0);
 
-    // @media (max-width: $width-tablet) {
-    //   font-size: 18px;
-    //   line-height: 18px;
-    // }
+    @media (max-width: $width-tablet) {
+      font-size: 15px;
+      line-height: 17px;
+    }
 
-    // @media (max-width: $width-mobile) {
-    //   font-size: 16px;
-    //   line-height: 16px;
-    // }
+    @media (max-width: 550px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
-}
-
-.modal-order__phone-number {
-  padding: 2px 0 2px;
 }
 
 .modal-order__phone-link {
@@ -171,28 +290,22 @@
 }
 
 .modal-order__mail {
-  margin: auto;
-  padding: 68px 22px 22px 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 19px;
   font-weight: 700;
   color: $white;
   text-decoration: none;
-  border: 1px solid $white;
-  position: relative;
 
-  // @media (max-width: $width-tablet) {
-  //   padding-left: 110px;
-  // }
-
-  // @media (max-width: $width-mobile) {
-  //   font-size: 14px;
-  //   line-height: 14px;
-  // }
-
-  // @media (max-width: 600px) {
-  //   margin-bottom: 40px;
-  // }
+  @media (max-width: 550px) {
+    font-size: 13px;
+    line-height: 16px;
+  }
 
 
   &::before {
@@ -208,15 +321,15 @@
     text-transform: uppercase;
     transform: translate(-50%, 0);
 
-    // @media (max-width: $width-tablet) {
-    //   font-size: 18px;
-    //   line-height: 18px;
-    // }
+    @media (max-width: $width-tablet) {
+      font-size: 15px;
+      line-height: 17px;
+    }
 
-    // @media (max-width: $width-mobile) {
-    //   font-size: 16px;
-    //   line-height: 16px;
-    // }
+    @media (max-width: $width-mobile) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
 
