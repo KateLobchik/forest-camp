@@ -88,12 +88,6 @@
   }
 }
 
-// .modal-order--active {
-
-// }
-
-
-
 
 
 
@@ -119,7 +113,8 @@
 
 
 .modal-order__question {
-  align-self: flex-start;
+  align-self: start;
+  text-align: start;
   padding-bottom: 60px;
 
   @media (max-width: $width-tablet) {
