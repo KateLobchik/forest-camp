@@ -30,9 +30,9 @@ const calculatePrices = value => {
 }
 
 const setTogglePosition = value => {
-  const positionValue = Math.floor((priceRange.clientWidth / (priceRange.max - priceRange.min)) * value - 30);
+  const positionValue = (value / 300) * 100;
 
-  toggle.style.left = `${positionValue}px`;
+  toggle.style.left = `${positionValue}%`;
   toggle.textContent = value;
   calculatePrices(toggle.textContent);
 }
@@ -66,4 +66,5 @@ priceRange.addEventListener('input', evt => {
   setTogglePosition(evt.target.value);
 
   priceInput.value = evt.target.value;
+  priceInput.setCustomValidity('');
 });
