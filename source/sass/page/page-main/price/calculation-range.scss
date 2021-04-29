@@ -103,10 +103,7 @@
 }
 
 .point-50 {
-  text-indent: -7px;
-  @media (max-width: $width-tablet) {
-    text-indent: -7px;
-  }
+  text-indent: -1ex;
   @media (max-width: $width-mobile) {
     color: transparent;
   }
@@ -122,10 +119,7 @@
 }
 
 .point-100 {
-  text-indent: -12px;
-  @media (max-width: $width-tablet) {
-    text-indent: -5px;
-  }
+  text-indent: -1ex;
   @media (max-width: $width-mobile) {
     color: transparent;
   }
@@ -141,13 +135,7 @@
 }
 
 .point-150 {
-  text-indent: -12px;
-  @media (max-width: $width-tablet) {
-    text-indent: -5px;
-  }
-  @media (max-width: $width-mobile) {
-    text-indent: -5px;
-  }
+  text-indent: -1ex;
 
   &::before {
     background-color: $step-4;
@@ -176,11 +164,12 @@
 
 .calculation-range__range-scale {
   position: absolute;
-  top: -1.5px;
+  top: -20px;
   left: 0;
   width: 100%;
-  height: 3px;
-  background-color: transparent;
+  height: 36px;
+  z-index: 1;
+  opacity: 0;
 }
 
 .calculation-range__range-toggle {

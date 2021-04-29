@@ -1,7 +1,6 @@
 {
 
   const deliveryButtons = document.querySelectorAll('.button-delivery');
-  console.log(deliveryButtons);
   const modalOrder = document.querySelector('.modal-order');
 
   const isEscEvent = (evt) => {

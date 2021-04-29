@@ -467,7 +467,10 @@
 
           <div class="price__calculation">
             <div class="price__calculation-section">
-              <input class="price__calculation-input" type="number" placeholder="Введите количество">
+              <div class="price__input-container">
+                <label class="price__calculation-label" for="price__calculation-input">Введите количество</label>
+                <input class="price__calculation-input" type="number" id="price__calculation-input" min="10" max="300">
+              </div>
               <p class="price__calculation-description">
                 Если на вашем мероприятии планируется более 200 гостей&nbsp;<br class="price__calculation-br">
                 мы готовы работать как ресторанчик с розничной продажей наших вкусностей.</p>

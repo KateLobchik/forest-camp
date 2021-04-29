@@ -161,37 +161,89 @@
 }
 
 .price__calculation-section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
   margin: 0;
   padding: 0;
 
   @media (max-width: 450px) {
+    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
     gap: 13px;
   }
 }
 
-.price__calculation-input {
+.price__input-container {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
   width: 18vw;
+  min-width: 235px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $width-tablet) {
+    width: 25vw;
+    min-width: 210px;
+  }
+
+  @media (max-width: $width-mobile) {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+.price__calculation-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: fit-content;
+  height: fit-content;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  white-space: nowrap;
+  color: $basic-green;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: -1;
+
+  @media (max-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+.price__calculation-input {
+  width: 100%;
   height: 83px;
   padding: 0 15px;
   text-align: center;
+  vertical-align: middle;
   font-family: inherit;
   font-weight: 700;
   font-size: 44px;
   line-height: 100%;
   text-transform: uppercase;
   color: $green;
+  background-color: transparent;
   border: 2px solid $green;
   box-sizing: border-box;
   outline: none;
-  text-overflow: ellipsis;
+  z-index: 10px;
 
   @media (max-width: $width-tablet) {
-    width: 25vw;
     height: 68px;
     padding: 0 10px;
     font-size: 30px;
@@ -199,7 +251,6 @@
   }
 
   @media (max-width: $width-mobile) {
-    width: 150px;
     height: 53px;
     font-size: 26px;
     line-height: 30px;
@@ -212,48 +263,14 @@
   transition: all 100ms ease-in-out;
 }
 
-.price__calculation-input::placeholder {
-  font-weight: 400;
-  font-family: inherit;
-  font-size: 20px;
-  font-style: italic;
-  text-transform: none;
-  color: $basic-green;
-  transform: translate(0, -7px);
-  opacity: 0.3;
-
-  @media (max-width: $width-tablet) {
-    font-size: 18px;
-    line-height: 19px;
-    transform: translate(0, -4px);
-  }
-
-  @media (max-width: $width-mobile) {
-    font-size: 13px;
-    line-height: 15px;
-    transform: translate(0, -3px);
-  }
-}
-
-.price__calculation-input:hover::placeholder,
-.price__calculation-input:focus::placeholder {
-  font-size: 21px;
-  opacity: 0.5;
-  transition: all 150ms ease-in-out;
-
-  @media (max-width: $width-tablet) {
-    font-size: 19px;
-  }
-
-  @media (max-width: $width-mobile) {
-    font-size: 14px;
-  }
-}
-
 .price__calculation-input::-webkit-outer-spin-button,
 .price__calculation-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.price__calculation-input:invalid {
+  border-color: red;
 }
 
 .price__calculation-description {
