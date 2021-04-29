@@ -12,7 +12,6 @@
     deliveryButton.addEventListener('click', () => {
       modalOrder.classList.add('modal-order--active');
 
-
       const onModalEscKeydown = (evt) => {
         if (isEscEvent(evt)) {
           evt.preventDefault();
@@ -25,11 +24,12 @@
         document.removeEventListener('keydown', onModalEscKeydown);
       };
 
-
       document.addEventListener('keydown', onModalEscKeydown);
 
-      modalOrder.addEventListener('click', () => {
-        closeModal();
+      modalOrder.addEventListener('click', (evt) => {
+        if (!evt.target.closest('.modal-order__container')) {
+          closeModal();
+        }
       });
     })
   }
