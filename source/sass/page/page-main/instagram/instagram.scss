@@ -64,7 +64,12 @@
 }
 
 .instagram__photo-container {
+  display: inline-block;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: border-box;
   overflow: hidden;
   position: relative;
 
@@ -75,20 +80,7 @@
   }
 }
 
-.instagram__photo {
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.instagram__photo-link {
-  padding: 0;
-  box-sizing: border-box;
-  border: 1px solid $basic-green;
+.last-photo-container {
   display: none;
 
   @media (max-width: 1150px) {
@@ -106,51 +98,26 @@
   @media (max-width: 450px) {
     display: none;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 25%;
-    height: 25%;
-    background-image: url("../img/instagram/icon-instagram.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    transform: translate(-50%, -50%);
-    opacity: 0.7;
-  }
 }
 
-.instagram__photo-link:hover,
-.instagram__photo-link:focus {
-  border-color: transparent;
-  outline: 2px solid $basic-green;
-  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4);
+.instagram__photo-container:hover,
+.instagram__photo-container:focus {
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.6);
   transition: all 100ms ease-in-out;
 }
 
-.instagram__photo-link:active {
+.instagram__photo-container:active {
   opacity: 0.5;
   box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4);
   transition: all 100ms ease-in-out;
 }
 
-.instagram__photo-more {
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  padding: 100px 20px 20px;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: $basic-green;
-  box-sizing: border-box;
-
-  @media (max-width: $width-mobile) {
-    padding-top: 80px;
-    font-size: 14px;
-  }
+.instagram__photo {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

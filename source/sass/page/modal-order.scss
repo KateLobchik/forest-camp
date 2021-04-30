@@ -249,7 +249,7 @@
   }
 
   &::before {
-    content: "Телефон";
+    content: attr(data-title);
     position: absolute;
     top: 16px;
     left: 50%;
@@ -308,7 +308,7 @@
 
 
   &::before {
-    content: "E-mail";
+    content: attr(data-title);
     position: absolute;
     top: 16px;
     left: 50%;
