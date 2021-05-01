@@ -12,12 +12,10 @@ for (let menuCarousel of menuCarousels) {
   const carousel = tns({
     container: menuCarousel,
     items: 1,
-    autoWidth: true,
     controls: false,
     nav: false,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayButtonOutput: false,
-    mouseDrag: 'mouseDrag',
   });
 }
