@@ -7,15 +7,18 @@ const slider = tns({
 
 
 const menuCarousels = document.querySelectorAll('.menu__slider');
+const paginationCarousel = document.querySelectorAll('.menu__slider-pagination');
 
-for (let menuCarousel of menuCarousels) {
+for (let i = 0; i < menuCarousels.length; i++) {
   const carousel = tns({
-    container: menuCarousel,
+    container: menuCarousels[i],
     items: 1,
     controls: false,
-    nav: false,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayButtonOutput: false,
+    mouseDrag: true,
+    swipeAngle: false,
+    navContainer: paginationCarousel[i],
   });
 }
