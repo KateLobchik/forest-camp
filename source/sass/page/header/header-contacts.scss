@@ -23,6 +23,7 @@
 
 .header-contacts__toggle {
   display: none;
+  outline: none;
 
   @media (max-width: $width-mobile) {
     display: inline-block;
