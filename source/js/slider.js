@@ -1,7 +1,6 @@
 const slider = tns({
   container: '.slider__slides',
   items: 1,
-  // controlsContainer: '.about-food__slider-controls',
   prevButton: '.about-food__button-back',
   nextButton: '.about-food__button-next',
   navContainer: '.slider__slider-pagination',
