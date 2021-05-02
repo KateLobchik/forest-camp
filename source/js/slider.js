@@ -3,6 +3,8 @@ const slider = tns({
   items: 1,
   controlsContainer: '.about-food__slider-controls',
   navContainer: '.slider__slider-pagination',
+  mouseDrag: true,
+  swipeAngle: false,
 });
 
 
