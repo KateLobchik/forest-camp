@@ -24,6 +24,11 @@
     padding: 40px 0 55px;
   }
 
+  @media (min-width: 1441px) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
   &::before {
     content: "";
     position: absolute;
