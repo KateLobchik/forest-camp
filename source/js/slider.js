@@ -16,6 +16,7 @@ for (let i = 0; i < menuCarousels.length; i++) {
   const carousel = tns({
     container: menuCarousels[i],
     items: 1,
+    gutter: '10',
     controls: false,
     autoplay: true,
     autoplayTimeout: 5000,

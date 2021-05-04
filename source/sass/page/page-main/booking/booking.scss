@@ -104,6 +104,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
 
   @media (max-width: $width-tablet) {
     column-gap: 20px;
@@ -117,6 +118,23 @@
 
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 1441px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -690px;
+      width: 631px;
+      height: 646px;
+      background-image: url("../img/background/light-background/meet-peper.svg");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      transform: translate(0, -35%);
+      opacity: 0.1;
+    }
   }
 }
 
