@@ -16,7 +16,6 @@ const paginationCarousel = document.querySelectorAll('.menu__slider-pagination')
 for (let i = 0; i < menuCarousels.length; i++) {
   const carousel = tns({
     container: menuCarousels[i],
-    mode: 'gallery',
     items: 1,
     gutter: 2,
     controls: false,
