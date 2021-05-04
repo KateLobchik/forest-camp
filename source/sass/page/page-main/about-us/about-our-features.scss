@@ -16,8 +16,8 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -20px;
-    left: -5%;
+    top: -20px;
+    right: 80%;
     width: 400px;
     height: 370px;
     background-image: url("../img/background/dark-background/cheeseburger.svg");
@@ -31,19 +31,16 @@
     }
 
     @media (max-width: $width-mobile) {
-      bottom: -5%;
-      left: -15%;
-      width: 200px;
-      height: 185px;
-      background-size: 200px 185px;
+      top: 20%;
+      right: 80%;
     }
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 75%;
+    bottom: 30px;
+    left: 85%;
     width: 452px;
     height: 447px;
     background-image: url("../img/background/dark-background/hot-dog.svg");
@@ -53,18 +50,12 @@
     opacity: 0.1;
 
     @media (max-width: $width-tablet) {
-      top: 25%;
-      left: 70%;
+      left: 75%;
       opacity: 0.07;
     }
 
     @media (max-width: $width-mobile) {
-      top: 40%;
-      left: auto;
-      right: -15%;
-      width: 226px;
-      height: 223px;
-      background-size: 226px 223px;
+      left: 65%;
     }
   }
 }
@@ -96,12 +87,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: -140px;
-    right: 30%;
-    width: 373px;
-    height: 381px;
+    top: -330px;
+    left: 45%;
+    width: 646px;
+    height: 661px;
     background-image: url("../img/background/dark-background/meet-peper.svg");
-    background-size: 373px 381px;
+    background-size: 646px 661px;
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.1;
@@ -111,11 +102,32 @@
     }
 
     @media (max-width: $width-mobile) {
-      top: -50px;
-      right: 0;
-      width: 166px;
-      height: 190px;
-      background-size: 166px 190px;
+      top: -180px;
+      width: 400px;
+      height: 420px;
+      background-size: 400px 420px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -280px;
+    right: 78%;
+    width: 392px;
+    height: 402px;
+    background-image: url("../img/background/dark-background/meet-peper.svg");
+    background-size: 392px 402px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.1;
+
+    @media (max-width: $width-tablet) {
+      opacity: 0.07;
+    }
+
+    @media (max-width: $width-mobile) {
+      display: none;
     }
   }
 }
