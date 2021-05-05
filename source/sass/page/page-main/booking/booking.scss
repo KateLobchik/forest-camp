@@ -96,6 +96,14 @@
   }
 }
 
+.booking__title-br {
+  display: none;
+
+  @media (max-width: $width-mobile) {
+    display: inline-block;
+  }
+}
+
 .booking__steps {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
