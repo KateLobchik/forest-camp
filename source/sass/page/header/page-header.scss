@@ -38,7 +38,7 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
   grid-template-rows: 1fr auto;
   max-width: $width-desktop;
   margin: 0 auto;
-  padding: 50px;
+  padding: 33px 60px 50px 40px;
   position: relative;
   box-sizing: border-box;
 
@@ -129,12 +129,14 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
 
 .page-header__logo {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   line-height: 0;
 
   @media (max-width: $width-tablet) {
     width: 100px;
-    height: 102;
+    height: auto;
+    margin: 0;
   }
 
   @media (max-width: $width-mobile) {
@@ -267,8 +269,12 @@ $calc-background-burger: calc(100% - #{$calc-desktop-2});
 
 .page-header__contacts {
   margin: 0;
-  padding: 3px 0 0;
+  padding: 24px 0 0;
   text-align: end;
+
+  @media (max-width: $width-tablet) {
+    padding-top: 3px;
+  }
 
   @media (max-width: $width-mobile) {
     padding-top: 10px;
